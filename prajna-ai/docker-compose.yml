@@ -1,0 +1,33 @@
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    container_name: prajna-backend
+    environment:
+      - PORT=5000
+      - TGPT_PATH=${TGPT_PATH:-/usr/local/bin/tgpt}
+      - TGPT_TIMEOUT_MS=${TGPT_TIMEOUT_MS:-12000}
+      - SPLUNK_HOST=${SPLUNK_HOST:-https://127.0.0.1:8089}
+      - SPLUNK_USER=${SPLUNK_USER:-admin}
+      - SPLUNK_PASS=${SPLUNK_PASS:-changeme}
+      - SPLUNK_INDEX=${SPLUNK_INDEX:-main}
+      - RATE_LIMIT_RPM=${RATE_LIMIT_RPM:-30}
+      - MAX_CONCURRENT_OPENAI=${MAX_CONCURRENT_OPENAI:-2}
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend/data:/app/data
+      - ./backend/api_keys.json:/app/api_keys.json
+    depends_on: []
+
+  frontend:
+    build: ./frontend
+    container_name: prajna-frontend
+    environment:
+      - PORT=80
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+

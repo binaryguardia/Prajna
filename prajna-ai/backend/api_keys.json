@@ -1,0 +1,17 @@
+{
+  "openai": {
+    "key": "",
+    "model": "gpt-4o",
+    "valid": false
+  },
+  "gemini": {
+    "key": "",
+    "model": "gemini-2.0-flash",
+    "valid": false
+  },
+  "claude": {
+    "key": "",
+    "model": "claude-3-5-sonnet",
+    "valid": false
+  }
+}
