@@ -164,12 +164,12 @@ Video Guide
 
 Authors
 -------
-- binaryguardia
+- @binaryguardia
 - Pradeep Kumar
 
 License
 -------
-Copyright (c) Binaryguardia, Pradeep Kumar.
+Copyright (c) @binaryguardia, Pradeep Kumar.
 All rights reserved.
 
 
