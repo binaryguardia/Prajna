@@ -7,6 +7,7 @@ Prajna AI is a full-stack app that combines natural chat with on-demand Splunk s
 - Normal chat uses tgpt by default (no API keys needed) with graceful fallback to OpenAI → Gemini.
 - Splunk searches are only executed when the user asks for logs.
 - Summaries of Splunk results prefer OpenAI → Gemini → tgpt as a fallback.
+<img width="1920" height="1080" alt="Screenshot from 2025-09-11 22-49-13" src="https://github.com/user-attachments/assets/f8ad4638-87ef-40db-aa71-9e46afd46e8f" />
 
 One-Command Start
 -----------------
