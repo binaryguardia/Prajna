@@ -26,7 +26,10 @@ open_browser() {
 need() {
   if ! command -v "$1" >/dev/null 2>&1; then
     echo -e "${RED}Missing dependency:${NC} $1"
-    echo -e "Install Node.js (v18+ recommended) and npm."
+    echo -e "Installing Node.js (v18+ recommended) and npm."
+    apt install npm
+    echo -e "Instaling tgpt..."
+    curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
     exit 1
   fi
 }
