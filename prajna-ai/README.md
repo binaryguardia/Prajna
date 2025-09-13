@@ -19,7 +19,7 @@ Requirements:
 Run:
 
 ```bash
-./quickstart.sh
+bash quickstart.sh
 ```
 
 This will:
