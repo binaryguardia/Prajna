@@ -52,11 +52,9 @@ Beginner-Friendly Setup
 1) Install tgpt (no account needed)
 - Linux (Ubuntu/Debian):
   ```bash
-  sudo curl -L -o /usr/local/bin/tgpt https://raw.githubusercontent.com/your-org/tgpt-releases/main/tgpt
-  sudo chmod +x /usr/local/bin/tgpt
-  tgpt --help
+  curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
   ```
-- macOS (Homebrew):
+- macOS (Homebrew):  
   ```bash
   brew tap your-org/tap
   brew install tgpt
