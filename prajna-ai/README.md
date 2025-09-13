@@ -9,7 +9,7 @@ Prajna AI is a full-stack app that combines natural chat with on-demand Splunk s
 - Summaries of Splunk results prefer OpenAI → Gemini → tgpt as a fallback.
 <img width="1920" height="1080" alt="Screenshot from 2025-09-11 22-49-13" src="https://github.com/user-attachments/assets/f8ad4638-87ef-40db-aa71-9e46afd46e8f" />
 
-One-Command Start
+One-Command Start for Linux 
 -----------------
 
 Requirements:
@@ -17,9 +17,15 @@ Requirements:
 - Optional: tgpt installed locally (recommended), set `TGPT_PATH` if not on PATH
 
 Run:
+```bash
+git clone https://github.com/binaryguardia/Prajna.git && cd Prajna/prajna-ai
+```
+This will:
+-Clone the Prajna repo in your current directory.
+-Move to main files.
 
 ```bash
-bash quickstart.sh
+sudo bash quickstart.sh
 ```
 
 This will:
@@ -50,17 +56,19 @@ Beginner-Friendly Setup
 -----------------------
 
 1) Install tgpt (no account needed)
-- Linux (Ubuntu/Debian):
-  ```bash
-  curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
-  ```
-- macOS (Homebrew):  
-  ```bash
-  brew tap your-org/tap
-  brew install tgpt
-  ```
-- Windows:
-  - Download `tgpt.exe` from the official release page and add it to your PATH.
+```bash
+curl -sSL https://raw.githubusercontent.com/aandrew-me/tgpt/main/install | bash -s /usr/local/bin
+```
+
+If you are using Arch Linux, you can install with pacman:
+
+```bash
+pacman -S tgpt
+```
+#### Install with Homebrew
+```bash
+brew install tgpt
+```
 
 If tgpt isn’t on PATH, set:
 ```bash
