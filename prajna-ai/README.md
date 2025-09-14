@@ -170,7 +170,7 @@ Video Guide
 
 Authors
 -------
-- @binaryguardia
+- [Binaryguardia](https://github.com/binaryguardia)
 - Pradeep Kumar
 
 License
