@@ -1,5 +1,8 @@
 Prajna AI
 =========
+Important Note
+--------------
+If you want to sue the features like log summerisation directly from splunk without even opening the application so you have to first setup and configure the complete splunk in you host machine, then it will automatically detect and able to fetch and provide you summerised data or logs.
 
 Overview
 --------
