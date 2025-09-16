@@ -169,7 +169,7 @@ Troubleshooting
 
 Video Guide
 -----------
-- Full walkthrough on YouTube: https://youtu.be/your-video-id-here
+- Full walkthrough on YouTube: https://youtu.be/XX40PHpQrtw
 
 Authors
 -------
