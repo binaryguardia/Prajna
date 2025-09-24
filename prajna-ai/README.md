@@ -174,7 +174,7 @@ Video Guide
 Authors
 -------
 - [Binaryguardia](https://github.com/binaryguardia)
-- Pradeep Kumar
+- [Pradeep Kumar](https://GitHub.com/pradeepkumar-cyber)
 
 License
 -------
